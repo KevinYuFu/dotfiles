@@ -1,0 +1,20 @@
+[user]
+	name = Yu Fu
+	email = kaifuzen@amazon.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	co = checkout
+	br = branch
+	st = status
+	undo = reset HEAD~1
+	lg = log --name-only
+[pull]
+	rebase = true
+[core]
+        editor = nvim
+
+#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
