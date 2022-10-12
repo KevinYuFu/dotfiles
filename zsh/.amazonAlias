@@ -1,0 +1,30 @@
+# =========================\
+# Amazon Alias
+# =========================\
+# - Brazil -
+alias bb='brazil-build'
+alias brazil-octane='/apollo/env/OctaneBrazilTools/bin/brazil-octane'
+alias bba='brazil-build apollo-pkg'
+alias bre='brazil-runtime-exec'
+alias brc='brazil-recursive-cmd'
+alias bws='brazil ws'
+alias bwsuse='bws use --gitMode -p'
+alias bwsCreate='bws create -n'
+alias brc='brazil-recursive-cmd'
+alias bbr='brc brazil-build'
+alias bball='brc --allPackages'
+alias bbb='brc --allPackages brazil-build'
+alias bbra='bbr apollo-pkg'
+alias bbca='bb clean && bba'
+alias bbcr='bb clean && bb release'
+alias bbcs='bb clean && bb server'
+alias bbrb='bws clean && brc --allPackages -- brazil-build'
+alias register_with_aaa='/apollo/env/AAAWorkspaceSupport/bin/register_with_aaa.py'
+alias dcv='python3 install-path/dcv-cdd.py connect kaifuzen-clouddesk.aka.corp.amazon.com'
+# - ninja-dev-sync -
+alias nin='ninja-dev-sync'
+alias ninup='nin -setup'
+# - scripts -
+alias shortbb='~/dotfiles/amazonAlias.sh'
+alias ninconf='~/dotfiles/ninjaDevSyncConfig.sh'
+# =========================\

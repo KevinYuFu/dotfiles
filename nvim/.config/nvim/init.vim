@@ -20,6 +20,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-surround'
         Plug 'morhetz/gruvbox'                  " colorscheme
         Plug 'cocopon/iceberg.vim'              " colorscheme
+        Plug 'folke/tokyonight.nvim'            " colorscheme
 
         " HTML Pluggin
         Plug 'mattn/emmet-vim'
@@ -53,6 +54,7 @@ let g:user_emmet_leader_key=','
 " <Theme>
 "colorscheme iceberg
 colorscheme gruvbox
+"colorscheme tokyonight
 
 
 " ------------------------------------------------------------
