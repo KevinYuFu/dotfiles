@@ -7,7 +7,10 @@
 sudo apt update
 
 # install tmux
+# <prefix> + I to install
+# <prefix> + U to install
 sudo apt install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # install gotop
 sudo snap install gotop
