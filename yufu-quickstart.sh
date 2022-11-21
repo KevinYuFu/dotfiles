@@ -48,6 +48,9 @@ sudo apt install git
 git clone https://github.com/KevinYuFu/.vim.git
 git clone https://github.com/KevinYuFu/Kevin-Resume.git
 
+# Git Auto Compelte Script
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+
 # tidy: To clean up html
 sudo apt install tidy
 

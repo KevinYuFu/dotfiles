@@ -103,6 +103,16 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.toolbox/bin:$PATH"
 export AAA_PROXY_HOST=kaifuzen.desktop.amazon.com
 
+
+# =========================\
+# Personal
+# =========================\
+# Git auto-completion
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+  . /opt/local/etc/profile.d/bash_completion.sh
+fi
+# =========================\
+
 # =========================\
 # Amazon Alias
 # =========================\
