@@ -19,7 +19,7 @@ alias bbca='bb clean && bba'
 alias bbcr='bb clean && bb release'
 alias bbcs='bb clean && bb server'
 alias bbrb='bws clean && brc --allPackages -- brazil-build'
-alias bbsync='brazil ws sync --md'
+alias bbsync='bws sync'
 # - AAA -
 alias register_with_aaa='/apollo/env/AAAWorkspaceSupport/bin/register_with_aaa.py'
 alias dcv='python3 install-path/dcv-cdd.py connect kaifuzen-clouddesk.aka.corp.amazon.com'
