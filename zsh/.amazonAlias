@@ -23,9 +23,11 @@ alias bbsync='bws sync'
 # - AAA -
 alias register_with_aaa='/apollo/env/AAAWorkspaceSupport/bin/register_with_aaa.py'
 alias dcv='python3 install-path/dcv-cdd.py connect kaifuzen-clouddesk.aka.corp.amazon.com'
-# - aaa -
 alias aaa='/apollo/env/AAAWorkspaceSupport/bin/register_with_aaa.py -a D16GRodeoWebsite'
 alias raaa="/apollo/env/AAAWorkspaceSupport/bin/register_with_aaa.py"
+# -  -
+alias update='eval `ssh-agent` && ssh-add'
+alias sync='kinit -f && mwinit -o'
 # - ninja-dev-sync -
 alias nin='ninja-dev-sync'
 alias ninup='nin -setup'

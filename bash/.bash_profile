@@ -13,7 +13,6 @@ alias vi="nvim" # nvim
 alias py="python3" # python
 alias gith="history | grep git" # git history
 alias vimrc="vi ~/.vimrc" # edit vimrc
-alias update="~/update-keys.sh"
 alias cloud="~/goto-cloud.sh"
 
 #. "$HOME/.cargo/env"
