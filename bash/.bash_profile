@@ -15,4 +15,6 @@ alias gith="history | grep git" # git history
 alias vimrc="vi ~/.vimrc" # edit vimrc
 alias cloud="~/goto-cloud.sh"
 
+function cd() { builtin cd "$@" && ls; }
+
 #. "$HOME/.cargo/env"

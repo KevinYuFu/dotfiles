@@ -135,7 +135,7 @@ set history=100		" increase vim stored history
 set autoread		" Reload files changed outside vim
 set autoindent		" keep previous line indentation
 set visualbell		" turn off bell sound
-set re=1			" Use a non-broken regex engine for syntax highlighting
+set re=2			" Use a non-broken regex engine for syntax highlighting
 set nocompatible	" ward off unexpected things that distro might have made + sanely reset options when re-sourcing .vimrc
 set showcmd			" show partial commands in the last line of the screen
 set nomodeline		" Modelines allow insecure options to be set. (Should look into this in future)
