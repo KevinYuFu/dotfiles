@@ -3,8 +3,15 @@
 # Resources
 # https://linuxhint.com/40_things_after_installing_ubuntu/
 
+cd ~
+
 # update apt
 sudo apt update
+
+# zsh
+sudo apt install zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install tmux
 # <prefix> + I to install
@@ -20,8 +27,8 @@ sudo add-apt-repository universe
 sudo apt install gnome-tweak-tool
 
 # alacritty terminal (doesn't work)
-#sudo add-apt-repository ppa:mmstick76/alacritty
-#sudo apt install alacritty
+sudo add-apt-repository ppa:mmstick76/alacritty
+sudo apt install alacritty
 apt-get install cmake pkg-config libfreetype6-dev 
 apt-get install libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
 
@@ -40,12 +47,12 @@ sudo apt-get install parcellite
 # vim
 sudo apt install vim
 sudo apt-get install python3-neovim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Git
 sudo apt install git
 
 # Clone from Git
-git clone https://github.com/KevinYuFu/.vim.git
 git clone https://github.com/KevinYuFu/Kevin-Resume.git
 
 # Git Auto Compelte Script
