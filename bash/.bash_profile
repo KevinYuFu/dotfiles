@@ -14,6 +14,7 @@ alias py="python3" # python
 alias gith="history | grep git" # git history
 alias vimrc="vi ~/.vimrc" # edit vimrc
 alias cloud="~/goto-cloud.sh"
+alias unreal="~/UnrealEngine-release/Engine/Binaries/Linux/UnrealEditor"
 
 function cd() { builtin cd "$@" && ls; }
 
