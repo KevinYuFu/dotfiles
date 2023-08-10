@@ -22,6 +22,20 @@ call plug#begin('~/.vim/plugged')
         Plug 'cocopon/iceberg.vim'              " colorscheme
         Plug 'folke/tokyonight.nvim'            " colorscheme
 
+        " Treesitter - Better Syntactic Parsing
+        Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+        " nvim-cmp - Autocompletion Tool
+        Plug 'neovim/nvim-lspconfig'
+        Plug 'hrsh7th/cmp-nvim-lsp'
+        Plug 'hrsh7th/cmp-buffer'
+        Plug 'hrsh7th/cmp-path'
+        Plug 'hrsh7th/cmp-cmdline'
+        Plug 'hrsh7th/nvim-cmp'
+        " LuaSnip-cmp - Snippets Tool
+        Plug 'L3MON4D3/LuaSnip'
+        Plug 'saadparwaiz1/cmp_luasnip'
+
         " HTML Pluggin
         Plug 'mattn/emmet-vim'
         Plug 'andrewradev/tagalong.vim'
@@ -169,6 +183,11 @@ set cursorline
 
 set complete -=i		" There's an issue with ctrl-n completion making it slow
 
+" ------------------------------------------------------------
+" <VimComp - LuaSnip>
+" ------------------------------------------------------------
+"
+"  -- Set up nvim-cmp.
 
 
 " ------------------------------------------------------------
