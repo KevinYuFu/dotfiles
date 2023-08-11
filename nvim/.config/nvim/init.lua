@@ -1,0 +1,7 @@
+require('plugins')
+require('nerdtree')
+require('emmet')
+require('mappings')
+require('fuzzyfinder')
+require('ui')
+require('config')
