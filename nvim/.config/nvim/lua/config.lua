@@ -14,7 +14,7 @@ set visualbell          " Use visual bell instead of beeping when doing somethin
 
 " set indentation settings                                                                 filetype indent plugin on       " Attempt to determine the type of a file based on name/content. Allow intelligent auto indenting
 filetype plugin on      " enable vim's feature for file browsing (technically a plugin)
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab " Set tab size to 4 spaces
+set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab " Set tab size to 4 spaces
 let g:indent_guides_auto_colors = 0
 hi IndentGuideOdd ctermbg=black                 " set custom indent colors (Requires plugin)
 hi IndentGuideOdd ctermbg=darkgrey              " set custom indent colours                

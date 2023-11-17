@@ -1,3 +1,3 @@
-vim.cmd([[
-colorscheme gruvbox
-]])
+-- Colours and fonts
+vim.cmd('colorscheme gruvbox')
+vim.cmd('syntax enable')

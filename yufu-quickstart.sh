@@ -74,6 +74,15 @@ cd ~/.vim
 # MYSQL
 sudo apt-get install mysql-server
 
+# NodeJS
+# https://askubuntu.com/questions/1152570/npm-cant-find-module-semver-error-in-ubuntu-19-04
+# tar -xf node-v#.#.#-linux-x64.tar.xz
+# sudo mv node-v#.#.#-linux-x64/bin/* /usr/local/bin/
+# sudo mv node-v#.#.#-linux-x64/lib/node_modules/ /usr/local/lib/
+# npm install typescript --save-dev
+# npm init -y
+
+
 # Pulse Effects EQ
 sudo apt-get -y install pulseeffects
 
