@@ -51,3 +51,4 @@ stow git
 stow nvim
 stow tmux
 stow zsh
+stow nerd-font
