@@ -111,6 +111,9 @@ export AAA_PROXY_HOST=kaifuzen.desktop.amazon.com
 if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
   . /opt/local/etc/profile.d/bash_completion.sh
 fi
+
+# Git rebase progress:
+alias rebaseProg='( RMD="$( git rev-parse --git-path 'rebase-merge/' )" && N=$( cat "${RMD}msgnum" ) && L=$( cat "${RMD}end" ) && echo "${N} / ${L}" ; )'
 # =========================\
 
 # =========================\
