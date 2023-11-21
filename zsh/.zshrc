@@ -114,6 +114,11 @@ fi
 
 # Git rebase progress:
 alias rebaseProg='( RMD="$( git rev-parse --git-path 'rebase-merge/' )" && N=$( cat "${RMD}msgnum" ) && L=$( cat "${RMD}end" ) && echo "${N} / ${L}" ; )'
+
+# Keymaps:
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
+
 # =========================\
 
 # =========================\
