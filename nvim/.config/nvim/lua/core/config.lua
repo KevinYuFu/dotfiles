@@ -8,6 +8,9 @@ vim.opt.autowrite = true
 vim.opt.cursorline = true
 vim.opt.autoread = true
 
+vim.opt.scrolloff = 15
+vim.cmd('set confirm')
+
 -- use spaces for tabs and stuff
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2

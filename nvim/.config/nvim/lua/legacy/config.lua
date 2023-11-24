@@ -27,7 +27,8 @@ set rnu                                 " relative numberLine
 set nu                                  " set absolute numberLine
 set gcr=a:blinkon0              " Disable cursor blink
 set timeoutlen=200      " alter time vim waits for you to complete a sequence of chars
-set hlsearch            " highlight text being searched                                    set so=15                       " always have space below and abover cursor (set scrolloff=#)
+set hlsearch            " highlight text being searched                                    
+set so=15                       " always have space below and abover cursor (set scrolloff=#)
 set t_Co=256            " Add this to work for GitBash
 set foldlevelstart=1
 "set colorcolumn=81
