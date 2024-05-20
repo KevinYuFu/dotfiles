@@ -38,13 +38,13 @@ while :; do
   shift
 done
 
-if [ ${OS}  = ubuntu ]; then
-  sudo apt-get install -y stow
-elif [ ${OS}  = mac ]; then
-  brew install stow
-fi
 
-stow alacritty
+#if [ ${OS} = Linux ]; then
+  #sudo apt-get install -y stow
+#elif [ ${OS}  = Darwin ]; then
+  #brew install stow
+#fi
+
 stow alacritty
 stow bash
 stow git
@@ -52,3 +52,4 @@ stow nvim
 stow tmux
 stow zsh
 stow nerd-font
+stow karabiner

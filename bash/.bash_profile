@@ -1,5 +1,5 @@
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+  . /opt/local/etc/profile.d/bash_completion.sh
 fi
 
 #export CLICOLOR=1
@@ -24,4 +24,20 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
   exec tmux
 fi
 
-#. "$HOME/.cargo/env"
+
+## Parallel Stuff
+# FNM Node.js manager
+eval "$(fnm env --use-on-cd)"
+# asdf install
+. "/opt/homebrew/opt/asdf/libexec/asdf.sh"
+. "/opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kaifuzen/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kaifuzen/google-cloud-sdk/path.zsh.inc'; fi
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/kaifuzen/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kaifuzen/google-cloud-sdk/completion.zsh.inc'; fi
+# postgresql
+export PATH="/opt/homebrew/Cellar/postgresql@15/15.7/bin/:$PATH"
+
+. "/opt/homebrew/opt/asdf/libexec/asdf.sh"
+
+. "/opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash"

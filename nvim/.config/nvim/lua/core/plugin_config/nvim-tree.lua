@@ -20,7 +20,7 @@ local function my_on_attach(bufnr)
   vim.keymap.set('n', '|', api.node.open.vertical,              opts('vsplit'))
   vim.keymap.set('n', 's', api.node.open.vertical,              opts('vsplit'))
   vim.keymap.set('n', 'u', api.tree.change_root_to_parent,      opts('up'))
-  vim.keymap.set('n', '<C-N>', api.fs.create,                   opts('new'))
+  --vim.keymap.set('n', '<C-N>', api.fs.create,                   opts('new'))
   vim.keymap.set('n', 'o', api.node.open.no_window_picker,      opts('new'))
 end
 

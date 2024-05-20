@@ -119,12 +119,7 @@ alias rebaseProg='( RMD="$( git rev-parse --git-path 'rebase-merge/' )" && N=$( 
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
-# =========================\
-
-# =========================\
-# Amazon Alias
-# =========================\
-source ~/dotfiles/zsh/.amazonAlias
-# =========================\
-
 source ~/.bash_profile
+
+# Created by `pipx` on 2024-05-14 17:32:49
+export PATH="$PATH:/Users/kaifuzen/.local/bin"
