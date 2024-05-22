@@ -45,7 +45,7 @@ sudo systemct1 enable tlp
 sudo apt-get install parcellite
 
 # vim
-sudo apt install vim
+sudo apt install nvim
 sudo apt-get install python3-neovim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
@@ -57,6 +57,10 @@ git clone https://github.com/KevinYuFu/Kevin-Resume.git
 
 # Git Auto Compelte Script
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+
+# nvim - vim-plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # tidy: To clean up html
 sudo apt install tidy

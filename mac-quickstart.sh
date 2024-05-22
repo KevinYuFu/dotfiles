@@ -33,6 +33,11 @@ brew install docker
 brew install docker-compose
 
 
+## -- Vim Setup Stuff -- # Todo need to add to linux too?
+brew install ripgrep
+brew install fd
+
+
 ## -- Parallel Dev Tools --
 
 # fnm - node.js manager
