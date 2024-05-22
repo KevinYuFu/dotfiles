@@ -8,22 +8,16 @@ require("mason-lspconfig").setup({
 require("neodev").setup({})
 
 -- LSP keymapping
-local on_attach = function(_, bufnr)
-  local function buf_set_option(...)
-    vim.api.nvim_buf_set_option(bufnr, ...)
-  end
-
-  buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
+local on_attach = function(_,_)
 
   -- Mappings.
-  local opts = { buffer = bufnr, noremap = true, silent = true }
-  vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
-  vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
+  vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
+  vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
 
-  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-  vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-  vim.keymap.set('n', 'gr', require('telescope_builtin').lsp_references, opts)
-  vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
+  vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, {})
+  vim.keymap.set('n', 'gr', vim.lsp.buf.references, {})
+  vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 end
 
 
