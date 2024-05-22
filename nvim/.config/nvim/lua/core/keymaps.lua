@@ -9,11 +9,9 @@ local function map(mode, combo, mapping, opts)
   vim.api.nvim_set_keymap(mode, combo, mapping, options)
 end
 
-vim.g.mapleader = ',' -- change the <leader> key to be comma
-
 
 -- " [\rr] resource vimrc
-vim.cmd('map <leader>rr :source ~/.config/nvim/init.vim <CR><C-f>')
+vim.cmd('map <leader>rr :source ~/.config/nvim/init.lua <CR><C-f>')
 
 -- " [] remove search highlight
 vim.cmd('nnoremap <C-f> :noh<cr>')

@@ -27,4 +27,7 @@ vim.call('plug#begin')
   Plug 'williamboman/mason-lspconfig.nvim'
   Plug 'neovim/nvim-lspconfig'
 
+  -- Lua lsp enhancement
+  Plug 'folke/neodev.nvim'
+
 vim.call('plug#end')
