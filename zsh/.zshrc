@@ -101,8 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 export PATH="$HOME/.toolbox/bin:$PATH"
-export AAA_PROXY_HOST=kaifuzen.desktop.amazon.com
-
 
 # =========================\
 # Personal

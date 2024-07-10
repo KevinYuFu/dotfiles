@@ -28,12 +28,12 @@ require("nvim-tree").setup({
   ---
   on_attach = my_on_attach,
   ---
+  actions = {
+    open_file = {
+      quit_on_open = true,
+    },
+  },
 })
-
--- Open NERDTree automatically when vim starts up if no files were specified
-if vim.fn.argc(-1) == 0 then
-  vim.cmd("NvimTreeOpen")
-end
 
 -- Ctrl-n to toggle Nvim-Tree
 vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')

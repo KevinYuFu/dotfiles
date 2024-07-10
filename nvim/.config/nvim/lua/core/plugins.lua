@@ -16,7 +16,7 @@ vim.call('plug#begin')
   Plug 'nvim-tree/nvim-tree.lua'
 
   -- Mini: Swiss Army
-  Plug 'echasnovski/mini.nvim'
+  --Plug 'echasnovski/mini.nvim'
 
   -- Fuzzy Finder - telescope
   Plug 'nvim-lua/plenary.nvim'

@@ -68,6 +68,8 @@ brew install opentofu
 # Git Hub
 brew install gh
 
+# fuzzy finder (need to add to linux side)
+brew install fzf
 
 
 # install:

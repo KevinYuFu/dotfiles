@@ -10,10 +10,10 @@ local function map(mode, combo, mapping, opts)
 end
 
 
--- " [\rr] resource vimrc
+-- " [_rr] resource vimrc
 vim.cmd('map <leader>rr :source ~/.config/nvim/init.lua <CR><C-f>')
 
--- " [] remove search highlight
+-- " [ctrl-f] remove search highlight
 vim.cmd('nnoremap <C-f> :noh<cr>')
 
 -- " set Ctrl-Shift to navigate horizontally faster
@@ -32,6 +32,7 @@ vim.cmd('nnoremap <C-J> <C-W><C-J>')
 vim.cmd('nnoremap <C-K> <C-W><C-K>')
 vim.cmd('nnoremap <C-L> <C-W><C-L>')
 vim.cmd('nnoremap <C-H> <C-W><C-H>')
+vim.keymap.set('n', '|', ':vnew<cr>')
 -- 
 -- " Visual PageUp PageDown
 vim.cmd('vnoremap <PageUp> 10k')
